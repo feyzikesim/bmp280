@@ -7,7 +7,7 @@ Only smbus2 other than Python.
 
 ## Installation
 ```bash
-pip3 install bmp280
+pip3 install bmp-280
 ```
 
 ## Usage
