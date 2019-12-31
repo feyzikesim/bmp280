@@ -69,7 +69,8 @@ class BMP280():
     FORCED_MODE = 0b01
     NORMAL_MODE = 0b11
 
-    def __init__(self, port, mode, oversampling_p, oversampling_t, filter, standby):
+    def __init__(self, port=1, mode=FORCED_MODE, oversampling_p=OVERSAMPLING_P_x16, 
+                 oversampling_t=OVERSAMPLING_T_x1, filter=IIR_FILTER_OFF, standby=T_STANDBY_4000):
         self.bus = SMBus(port)
         self.bmp280_init(mode, oversampling_p, oversampling_t, filter, standby)
 
