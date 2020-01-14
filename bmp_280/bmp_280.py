@@ -2,7 +2,7 @@ from smbus2 import SMBus, i2c_msg
 from time import sleep
 
 def twos_complement(input):
-    if input > 32768:
+    if input > 32767:
         return input - pow(2, 16)
     else:
         return input
