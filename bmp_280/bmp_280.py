@@ -129,3 +129,6 @@ class BMP280():
         var2 = p * p8 / 32768.0
         p += (var1 + var2 + p7) / 16.0
         return p / 100
+
+    def __del__(self):
+        self.bus.close()
